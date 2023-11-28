@@ -1,0 +1,250 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+/* Header Styles */
+.top-header {
+    background: #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-icon {
+    height: 50px;
+}
+
+.header-buttons button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #00205A;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.header-buttons button:hover {
+    background-color: #003580;
+}
+
+.main-header {
+    background: #00205A;
+    color: #fff;
+    text-align: center;
+}
+
+.main-header h1 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Container Styles */
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row; /* Changed to row */
+}
+
+.sidebar {
+    width: 200px;
+    background: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ddd;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #00205A;
+    color: #fff;
+    margin-top: auto;
+}
+
+/* Admin Buttons Container */
+.admin-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Admin Button Styling */
+.admin-button {
+    padding: 10px 20px;
+    background-color: #00205A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.admin-button:hover {
+    background-color: #003580;
+}
+
+/* Additional Styles for Login and Signup Pages */
+.login-container, .signup-container {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2, .signup-container h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00205A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #003580;
+}
+
+/* Cart Button and Count Styles */
+.header-buttons button.cart-button {
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.header-buttons button.cart-button:hover {
+    background-color: #003399;
+}
+
+.cart-count {
+    color: red;
+    margin-left: 5px;
+    font-size: 0.8em;
+    display: inline;
+}
+
+/* Product List Styles */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+    width: 100%;
+}
+
+.product-item {
+    width: 220px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-item .product-image {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-item .product-name {
+    font-size: 12px;
+    margin: 5px 0;
+    word-wrap: break-word;
+}
+
+.product-item .add-to-cart-button {
+    padding: 5px;
+    font-size: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Cart Actions Styles */
+.cart-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    width: 100%;
+}
+
+.cart-actions button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #00205A;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-actions button:hover {
+    background-color: #003580;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Community Food Pantry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <img src="icon.png" alt="Food Pantry Icon" class="header-icon">
+            <div class="header-buttons">
+                <button onclick="location.href='admin_login.html'">Admin Login</button>
+            </div>
+        </div>
+        <div class="main-header">
+            <h1>Community Food Pantry</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">How to Support the Food Pantry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="recipes.html">Food Pantry Recipes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="process-login.php" method="post">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Community Food Pantry</p>
+    </footer>
+</body>
+</html>
